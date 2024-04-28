@@ -18,7 +18,27 @@ a:active {color: #000080;}
 body {background-color: #E0E0E0; padding: 0; margin: 0; font-family: "Arial", "Helvetica", "sans-serif"; color: #000000; font-size: 16px;}
 .container {width: 1000px; height: auto; margin: 0 auto 20px auto; padding: 0; background-color: #FFFFFF;}
 .header {height: 200px; width: 1000px; white-space: nowrap; overflow: hidden;background-image: url('background.jpg');background-size: 100%;}
-.header h1{	text-align: right;vertical-align:top;	font-size: 12px; color: white;	}
+.header h1{
+background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+	text-align: center;
+	padding: 5px;
+  font-size: 32px;
+  color:white;
+  font-family: "Georgia";
+}
+.overlay {
+	top:0:
+  bottom: 0; 
+  color:white;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  font-size: 15px;
+  padding: 5px;
+  text-align: right;
+  font-family: "Georgia";
+}
 .main {height: auto; width: 1000px;}
 .menu {float: left; width: 199px; margin: 0; padding: 0; border-right: 1px solid #4682B4;}
 .menu .item {display: block; width: 190px; margin: 2px; padding: 8px 3px 8px 3px;}
@@ -30,14 +50,30 @@ body {background-color: #E0E0E0; padding: 0; margin: 0; font-family: "Arial", "H
 .menu .line {margin-top: 3px 0; padding: 0; height: 0px; line-height: 0; border: 0; border-bottom: 1px solid #4682B4; color: #4682B4; width: 199px;}
 .content {float: left; width:710px; padding-left: 50px; height: auto;}
 .content p {text-align: justify;}
-.footer {width: 1000px; margin: 10px 0 10px 0; padding: 10px 0 10px 0; border-top: 1px dashed gray;}
+/* 底部 */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #004265;
+  margin-top: 10px;
+  left: 0;
+  bottom: 0;
+}
+ .footer h2{
+ text-align: center;
+ color: white;
+ font-size: 15px;
+ }
 </style>
 </head>
 
 	<body>
 		<div class="container">
 	<div class="header">
-	<h1>Collocated with International Conference on Behavioural and Social Computing 2024 (BESC 2024)
+	<h1>The International Workshop on<br> Knowledge-enhanced Intelligent Computing in Healthcare<br>(KICH 2024)<br><br>
+   <div class="overlay">
+			Collocated with International Conference on Behavioural and Social Computing 2024 (BESC 2024)
+		</div>
 	</h1>
 	</div>
 		
@@ -58,9 +94,6 @@ body {background-color: #E0E0E0; padding: 0; margin: 0; font-family: "Arial", "H
 			<div class="line"></div>
 		</div>
 		<div class="content">
-			<p style="font-size: 30px; font-weight: bold; text-align: center;">
-				The International Workshop on Knowledge-enhanced Intelligent Computing in Healthcare<br>(KICH 2024)
-			</p>
 		<div class="title">Contact Us</div>
 		  <p>All inquiries about the workshop, including submissions, can be emailed to yanenliang@m.scnu.edu.cn</p>
 	  
@@ -77,7 +110,7 @@ body {background-color: #E0E0E0; padding: 0; margin: 0; font-family: "Arial", "H
 	</div>
 	<div class="footer">
 		<div style="text-align: center; font-size: small;">
-			Copyright &copy; 2024 KICH
+			<h2>Copyright &copy; 2024 KICH</>
 		</div>
 	</div>
 </div>
